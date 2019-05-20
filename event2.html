@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #box{
+padding : 12px;
+background: #AAA;
+
+
+
+    } 
+    button 
+    {
+        padding : 12px;
+    }
+    
+
+    
+    
+    </style>
+   
+</head>
+<body>
+    <div id="box">
+<button> Cliquer-moi </button>
+
+    </div>
+    <script>
+            document.addEventListener('DOMContentLoades',function(){
+                var box = document.getElementById('box');
+                var btn = document.getElementById('button');
+                box.addEventListener('click',function(evt){
+                    console.log(this , evt);
+       
+                });
+                btn.addEventListener('click',function(evt){
+                   evt.stopPropagation(); 
+                   console.log(this , evt);
+                       
+                });
+            })
+       
+           </script>
+</body>
+</html>
