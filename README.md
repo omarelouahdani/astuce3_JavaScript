@@ -1,0 +1,1 @@
+# astuce3_JavaScript
